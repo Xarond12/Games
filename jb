@@ -1,1 +1,2 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/opBandwidth/_Paragon_/main/main.lua"))()
+-- Vynixius Jailbreak; scripted by Vynixu
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak", true))()
