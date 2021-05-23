@@ -1,0 +1,41 @@
+local fuck = game.Players.LocalPlayer
+local golden_hee = game:GetService("Workspace").BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame
+
+function clipkuy()
+    game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+        end)
+    end)
+end
+
+function kuyyai()
+    local ilikehee = game:GetService("Workspace").BoatStages.NormalStages:GetChildren()
+    for i=1,2 do
+        for hee , kuy in pairs(ilikehee) do
+            if kuy:IsA("Model") and string.match(kuy.Name,"%d+") then
+                print(kuy.Name)
+                fuck.Character.HumanoidRootPart.CFrame = kuy.DarknessPart.CFrame
+                wait(0.1)
+            end 
+        end
+    end
+end
+
+spawn(function()
+    while true do 
+        pcall(function()
+            game:GetService("RunService").RenderStepped:wait()
+            if fuck.Character then
+                kuyyai()
+                wait(1)
+                fuck.Character.HumanoidRootPart.CFrame = golden_hee
+                wait(1)
+            end
+        end)
+    end
+end)
+
+spawn(function()
+    clipkuy()
+end)
