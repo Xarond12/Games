@@ -1,0 +1,2 @@
+_G.Key = "xarondhub"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ClairSonata/cracked/main/skatehub.lua",true))()
